@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>ANIME OUTPOST - Una tienda de Calidad</title>
+    <link rel="shortcut icon" href="imgs/Favicon.png" type="image/x-icon" />
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 </head>
@@ -18,8 +19,9 @@
                 <nav>
                     <ul>
                         <li><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
-                        <li><a href="#"><i class="fab fa-box-open"> </i>Productos</a></li>
-                        <li><a href="#"><i class="fab fa-box-open"> </i>Nuevos</a></li>
+                        <li><a href="#all-products"><i class="fab fa-box-open"> </i>Productos</a></li>
+                        <li><a href="#new-products"><i class="fas fa-star"> </i>Nuevos</a></li>
+                        <li><a href="#bestsellers-products"><i class="fas fa-star"> </i>Destacados</a></li>
                         <li><a href="#"><i class="fas fa-file-alt"></i>Acerca de Nosotros</a></li>
                         <li><a href="#"><i class="fas fa-headset"></i> Contacto</a></li>
                     </ul>
@@ -49,12 +51,16 @@
     <ul id="box-search">
         <li><a href="#"><i class="fas fa-search"></i>Naruto</a></li>
         <li><a href="#"><i class="fas fa-search"></i>Kimetsu no Yaiba</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>Tazas</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>Posters</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>Llaveros</a></li>
         <li><a href="#"><i class="fas fa-search"></i>Figuras</a></li>
         <li><a href="#"><i class="fas fa-search"></i>Mangas</a></li>
-        <li><a href="#"><i class="fas fa-search"></i>Bragon Ball</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Tazas</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Ropa</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Llaveros</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Accesorios</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Jujutsu Kaisen</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Dragon Ball</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Decoración</a></li>
+        <li><a href="#"><i class="fas fa-search"></i>Artículos</a></li>
     </ul>
 
     <div id="cover-ctn-search"></div>
@@ -86,22 +92,26 @@
             </div>
         </section>
 
-        <section class="products">
-            <div class="filter-container">
-                <div class="text-products">
-                    <h3>Todos los productos</h3>
-                </div>
-    
-                <div class="filter">
-                    <div id="icon-menu">
-                        <i class="fas fa-bars"></i>
-                    </div>
-                </div>
+        <section class="products" id="all-products">
+           
+            <input type="radio" id="TODOS" name="categories" value="TODOS" checked>
+            <input type="radio" id="MANGAS" name="categories" value="MANGAS">
+            <input type="radio" id="ACCESORIOS" name="categories" value="ACCESORIOS">
+            <input type="radio" id="DECORACIÓN" name="categories" value="DECORACIÓN">
+            <input type="radio" id="ROPA" name="categories" value="ROPA">
+            <input type="radio" id="ARTÍCULOS" name="categories" value="ARTÍCULOS">            
+
+            <div class="container-category">
+                <label for="TODOS">TODOS</label>
+                <label for="HTML">MANGAS</label>
+                <label for="CSS">ACCESORIOS</label>
+                <label for="JS">DECORACIÓN</label>
+                <label for="PHP">ROPA</label>
+                <label for="NODEJS">ARTÍCULOS</label>
             </div>
-            
 
             <div class="products-content">
-                <article class="article article-1">
+                <article class="article article-1" data-category="ARTÍCULOS">
                     <img src="imgs/Kimetsu_no_Yaiba_Mug.webp" alt="">
                     <div class="article-content article-content-1">
                         <h4>Taza Mug 11oz Anime Estilo Tanjiro | Kimetsu No Yaiba</h4>
@@ -112,7 +122,7 @@
                     </div>
                 </article>
 
-                <article class="article article-2">
+                <article class="article article-2" data-category="ARTÍCULOS">
                     <img src="imgs/Sabo_Action_Figure.avif" alt="">
                     <div class="article-content article-content-2">
                         <h4>Sabo "El Emperador de las Llamas" Figura| One Piece</h4>
@@ -123,7 +133,7 @@
                     </div>
                 </article>
 
-                <article class="article article-3">
+                <article class="article article-3" data-category="DECORACIÓN">
                     <img src="imgs/Wanted_Poster_Monkey_D_Luffy.webp" alt="">
                     <div class="article-content article-content-3">
                         <h4>Wanted Poster Monkey D. Luffy | One Piece</h4>
@@ -134,51 +144,51 @@
                     </div>
                 </article>
 
-                <article class="article article-4">
+                <article class="article article-4" data-category="ARTÍCULO">
                     <img src="imgs/One_Piece_Mug.webp" alt="">
                     <div class="article-content article-content-4">
                         <h4>Taza Mug 11oz Anime Jolly Roger | One Piece</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, suscipit.</p>
-                        <p>Categoría: <span>Artículos</span></p>
+                        <p>Categoría: <span>Artículo</span></p>
                         <p>Precio: <span>$22.70</span></p>
                         <button class="button">Agregar al carrito</button>
                     </div>
                 </article>
 
-                <article class="article article-5">
+                <article class="article article-5" data-category="ARTÍCULO">
                     <img src="imgs/Kimetsu_no_Yaiba_Mug_Nezuko_Style.png" alt="">
                     <div class="article-content article-content-5">
                         <h4>Taza Mug 11oz Anime Estilo Nezuko | Kimetsu no Yaiba</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, suscipit.</p>
-                        <p>Categoría: <span>lorem</span></p>
+                        <p>Categoría: <span>Artículo</span></p>
                         <p>Precio: <span>$22.70</span></p>
                         <button class="button">Agregar al carrito</button>
                     </div>
                 </article>
 
-                <article class="article article-6">
+                <article class="article article-6" data-category="MANGAS">
                     <img src="imgs/Jujutsu_Kaisen_Cover_Manga.jpg" alt="">
                     <div class="article-content article-content-6">
                         <h4>Jujutsu Kaisen Manga Vol. 1 | Gege Akutami</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, suscipit.</p>
-                        <p>Categoría: <span>Libros</span></p>
+                        <p>Categoría: <span>Libro</span></p>
                         <p>Precio: <span>$31.90</span></p>
                         <button class="button">Agregar al carrito</button>
                     </div>
                 </article>
 
-                <article class="article article-7">
+                <article class="article article-7" data-category="ACCESORIOS">
                     <img src="imgs/Bandana_Naruto.png" alt="">
                     <div class="article-content article-content-7">
                         <h4>Bandana de Naruto Shippuden Cosplay Anime</h4>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, suscipit.</p>
-                        <p>Categoría: <span>Accesorios</span></p>
+                        <p>Categoría: <span>Accesorio</span></p>
                         <p>Precio: <span>$19.99</span></p>
                         <button class="button">Agregar al carrito</button>
                     </div>
                 </article>
 
-                <article class="article article-8">
+                <article class="article article-8" data-category="DECORACIÓN">
                     <img src="imgs/Wanted_Poster_Portgas_D_Ace.webp" alt="">
                     <div class="article-content article-content-8">
                         <h4>One Piece Poster Wanted Portgas D. Ace</h4>
@@ -188,10 +198,151 @@
                         <button class="button">Agregar al carrito</button>
                     </div>
                 </article>
+
+                <article class="article article-9">
+                    <img src="imgs/One_Piece_Cover_Manga.webp" alt="">
+                    <div class="article-content article-content-9">
+                        <h4>One Piece, Vol. 1: Romance Dawn | Eiichiro Oda</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                        <p>Categoría: <span>Libro</span></p>
+                        <p>Precio: <span>$20.90</span></p>
+                        <button class="button">Agregar al carrito</button>
+                    </div>
+                </article>
+        
+                <article class="article article-10" data-category="FIGURA">
+                    <img src="imgs/Elizabeth_Liones_Action_Figure.jpg" alt="">
+                    <div class="article-content article-content-10">
+                        <h4>Elizabeth Liones - Figura Coleccionable | Nanatsu no Taizai</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                        <p>Categoría: <span>Figura</span></p>
+                        <p>Precio: <span>$129.90</span></p>
+                        <button class="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="article article-11" data-category="MANGAS">
+                    <img src="imgs/Boku_no_Hero_Cover_Manga.webp" alt="">
+                    <div class="article-content article-content-11">
+                        <h4>Boku no Hero Vol. 1 | Kōhei Horikoshi</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                        <p>Categoría: <span>Libro</span></p>
+                        <p>Precio: <span>$19.90</span></p>
+                        <button class="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="article article-12" data-category="MANGAS">
+                    <img src="imgs/Dragon_Ball_Super_Cover_Manga.webp" alt="">
+                    <div class="article-content article-content-12">
+                        <h4>Dragon Ball Super Vol. 12 |  Akira Toriyama</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                        <p>Categoría: <span>Libro</span></p>
+                        <p>Precio: <span>$19.90</span></p>
+                        <button class="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="article article-13" data-category="FIGURA">
+                    <img src="imgs/Hinata_Hyuga_Action_Figure.jpg" alt="">
+                    <div class="article-content article-content-13">
+                        <h4>Hyūga Hinata Puños Gemelos de León Figura | Naruto Shippuden</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                        <p>Categoría: <span>Figura</span></p>
+                        <p>Precio: <span>$129.90</span></p>
+                        <button class="button">Agregar al carrito</button> 
+                    </div>
+                </article>
+
+                <article class="article article-14" data-category="ROPA">
+                    <img src="imgs/Kimetsu_no_Yaiba_T-Shirt.jpg" alt="">
+                    <div class="article-content article-content-14">
+                        <h4>Polo Manga Corta Unisex - Tanjiro | Kimetsu no Yaiba</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                        <p>Categoría: <span>Ropa</span></p>
+                            <p>Precio: <span>$25.90</span></p>
+                            <button class="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="article article-15" data-category="MANGAS">
+                    <img src="imgs/Naruto_Manga_Cover.webp" alt="">
+                    <div class="article-content article-content-15">
+                        <h4>Naruto Vol. 1: Uzumaki Naruto!! | Masashi Kishimoto</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                        <p>Categoría: <span>Ropa</span></p>
+                            <p>Precio: <span>$25.90</span></p>
+                            <button class="button">Agregar al carrito</button>
+                    </div>
+                </article>
+                
+                <article class="article article-16" data-category="DECORACIÓN">
+                    <img src="imgs/One_Piece_Poster.jpg" alt="">
+                    <div class="article-content article-content-16">
+                        <h4>TimeSkip Poster One Piece | One Piece</h4>
+                        <p>Lorem ipsum dolor, Decoración amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                        <p>Categoría: <span>Ropa</span></p>
+                        <p>Precio: <span>$20.90</span></p>
+                        <button class="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="article article-17" data-category="MANGAS">
+                    <img src="imgs/One_Punch_Man_Cover_Manga.jpg" alt="">
+                    <div class="article-content article-content-17">
+                        <h4>One Punch-Man Vol. 1 | One</h4>
+                        <p>Lorem ipsum dolor, Decoración amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                        <p>Categoría: <span>Libro</span></p>
+                        <p>Precio: <span>$19.90</span></p>
+                        <button class="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <article class="article article-18" data-category="MANGAS">
+                    <img src="imgs/One_Punch_Man_Cover_Manga.webp" alt="">
+                    <div class="article-content article-content-18">
+                        <h4>One Punch-Man Vol. 9 | One</h4>
+                        <p>Lorem ipsum dolor, Decoración amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                        <p>Categoría: <span>Libro</span></p>
+                        <p>Precio: <span>$19.90</span></p>
+                        <button class="button">Agregar al carrito</button>
+                    </div>
+                </article>
+                
+                <article class="article article-19" data-category="MANGAS">
+                    <img src="imgs/One_Punch_Man_Cover_Manga.webp" alt="">
+                    <div class="article-content article-content-19">
+                        <h4>One Punch-Man Vol. 9 | One</h4>
+                        <p>Lorem ipsum dolor, Decoración amet consectetur adipisicing elit. Sunt, suscipit.</p>
+                        <p>Categoría: <span>Libro</span></p>
+                        <p>Precio: <span>$19.90</span></p>
+                        <button class="button">Agregar al carrito</button>
+                    </div>
+                </article>
+               
+                <article class="article article-18" data-category="ACCESORIOS">
+                    <img src="imgs/One_Punch_Man_Cover_Manga.webp" alt="">
+                    <div class="article-content article-content-18">
+                        <h4>Llavero 2D Denji | Chainsaw Man</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ullam animi esse provident, laboriosam impedit culpa
+                            libero adipisci aperiam assumenda?</p>
+                        <p>Categoría: <span>Libro</span></p>
+                        <p>Precio: <span>$19.90</span></p>
+                        <button class="button">Agregar al carrito</button>
+                    </div>
+                </article>
+
+                <h1>Llavero 2D Denji | Chainsaw Man</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ullam animi esse provident, laboriosam impedit culpa
+                            libero adipisci aperiam assumenda?</p>
+                        <p>Categoría: <span>Decoración</span></p>
+                        <p>Precio: <span>$00.00</span></p>
+                        <button class="button">Agregar al carrito</button>
+
             </div>
         </section>
 
-        <section class="new-products">
+        <section class="new-products" id="new-products">
             <div class="text-new-products">
                 <h5>Productos recientes</h5>
             </div>
@@ -203,7 +354,7 @@
                         <h1>One Piece, Vol. 1: Romance Dawn | Eiichiro Oda</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ullam animi esse provident, laboriosam impedit culpa
                             libero adipisci aperiam assumenda?</p>
-                        <p>Categoría: <span>Libros</span></p>
+                        <p>Categoría: <span>Libro</span></p>
                         <p>Precio: <span>$20.90</span></p>
                         <button class="button">Agregar al carrito</button>
                     </div>
@@ -215,7 +366,7 @@
                         <h1>One Punch-Man Vol. 1 | One</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ullam animi esse provident, laboriosam impedit culpa
                             libero adipisci aperiam assumenda?</p>
-                        <p>Categoría: <span>Libros</span></p>
+                        <p>Categoría: <span>Libro</span></p>
                         <p>Precio: <span>$19.90</span></p>
                         <button class="button">Agregar al carrito</button>
                     </div>
@@ -227,7 +378,7 @@
                         <h1>LLavero 2D Denji y Pochita | Chainsaw Man</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ullam animi esse provident, laboriosam impedit culpa
                             libero adipisci aperiam assumenda?</p>
-                        <p>Categoría: <span>Accesorios</span></p>
+                        <p>Categoría: <span>Accesorio</span></p>
                         <p>Precio: <span>$10.90</span></p>
                         <button class="button">Agregar al carrito</button>
                     </div>
@@ -239,7 +390,7 @@
                         <h1>Llavero 2D Sasuke Uchiha | Naruto Shippuden</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ullam animi esse provident, laboriosam impedit culpa
                             libero adipisci aperiam assumenda?</p>
-                        <p>Categoría: <span>Accesorios</span></p>
+                        <p>Categoría: <span>Accesorio</span></p>
                         <p>Precio: <span>$08.90</span></p>
                         <button class="button">Agregar al carrito</button>
                     </div>
@@ -287,7 +438,7 @@
                         <h1>Llavero 2D Denji | Chainsaw Man</h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ullam animi esse provident, laboriosam impedit culpa
                             libero adipisci aperiam assumenda?</p>
-                        <p>Categoría: <span>lorem</span></p>
+                        <p>Categoría: <span>Decoración</span></p>
                         <p>Precio: <span>$00.00</span></p>
                         <button class="button">Agregar al carrito</button>
                     </div>
@@ -295,7 +446,7 @@
             </div>
         </section>
 
-        <section class="bestsellers-products">
+        <section class="bestsellers-products" id="bestsellers-products">
             <div class="text-bestsellers-products">
                 <h2>Productos más vendidos</h2>
             </div>
@@ -357,10 +508,10 @@
                         </div>
 
                         <div class="card-content">
-                            <h3 class="product-name">Elizabeth Liones - Figura Coleccionable | Nanatsu no Taizai</h3>
+                            <h3 class="product-name">Elizabeth Liones Figura | Nanatsu no Taizai</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ullam animi esse provident, laboriosam impedit culpa
                                 libero adipisci aperiam assumenda?</p>
-                            <p>Categoría: <span>Figuras</span></p>
+                            <p>Categoría: <span>Figura</span></p>
                             <p>Precio: <span>$129.90</span></p>
                             <button class="button">Agregar al carrito</button>
                         </div>
@@ -495,7 +646,7 @@
                         </div>
 
                         <div class="card-content">
-                            <h3 class="product-name">Hyūga Hinata Puños Gemelos de León - Figura | Naruto Shippuden</h3>
+                            <h3 class="product-name">Hyūga Hinata Puños Gemelos de León Figura | Naruto Shippuden</h3>
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis ullam animi esse provident, laboriosam impedit culpa
                                 libero adipisci aperiam assumenda?</p>
                             <p>Categoría: <span>Figura </span></p>
@@ -533,6 +684,10 @@
             <div class="swiper-button-prev swiper-navBtn"></div>
             <div class="swiper-pagination"></div>
         </section>
+
+        
+
+
     </main>
 
     <footer>
