@@ -90,8 +90,8 @@
 [value="MANGAS"]:checked ~ .product-container .article:not([data-category~="MANGAS"]),
 [value="ACCESORIOS"]:checked ~ .product-container  .article:not([data-category~="ACCESORIOS"]),
 [value="DECORACIÓN"]:checked ~ .product-container  .article:not([data-category~="DECORACIÓN"]),
-[value="NODEJS"]:checked ~ .product-container  .article:not([data-category~="NODEJS"]),
-[value="VUE"]:checked ~ .product-container  .article:not([data-category~="VUE"]){
+[value="ROPA"]:checked ~ .product-container  .article:not([data-category~="ROPA"]),
+[value="ARTÍCULOS"]:checked ~ .product-container  .article:not([data-category~="ARTÍCULOS"]){
     display: none;
 }
 
