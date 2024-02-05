@@ -1,7 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+}
+
+/*Bar-Search (Buscador)*/
+#ctn-bars-search{
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    z-index: 9;
+    transition: all 600ms;
+}
+
+#ctn-bars-search input{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+}
+
+/*Bar-Search (Efecto)*/
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 7;
+    display: none;
+}
+
+/*Box-Search (Caja de Busqueda)*/
+#box-search{
+    position: fixed;
+    top: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    background: #fff;
+    z-index: 8;
+}
+
+#box-search li a{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.1rem;
+    display: block;
+    width: 1200px;
+    color: #777777;
+    padding: 12px 20px;
+    overflow: hidden;
+    display: none;
+}
+
+#box-search li a:hover{
+    background: #f3f3f3;
+}
+
+#box-search li a i{
+    margin-right: 10px;
+    color: #777777;
+}
+
+/*Contenedor principal*/
+.main{
+    margin: auto;
+}
+
+.products{
+    width: 94%;
+    border: 2px solid red;
+    margin: auto;
+}
+
+/*sistema de filtrado*/
+
+[value="TODOS"]:checked ~ .product-container .article[data-category]{
+    display: block;
+}
+
+[value="MANGAS"]:checked ~ .product-container .article:not([data-category~="MANGAS"]),
+[value="ACCESORIOS"]:checked ~ .product-container  .article:not([data-category~="ACCESORIOS"]),
+[value="DECORACIÓN"]:checked ~ .product-container  .article:not([data-category~="DECORACIÓN"]),
+[value="NODEJS"]:checked ~ .product-container  .article:not([data-category~="NODEJS"]),
+[value="VUE"]:checked ~ .product-container  .article:not([data-category~="VUE"]){
+    display: none;
+}
+
+[value="TODOS"]:checked ~ .container-category [for="TODOS"],
+[value="MANGAS"]:checked ~ .container-category [for="MANGAS"],
+[value="ACCESORIOS"]:checked ~ .container-category [for="ACCESORIOS"],
+[value="DECORACIÓN"]:checked ~ .container-category [for="DECORACIÓN"],
+[value="ROPA"]:checked ~ .container-category [for="ROPA"],
+[value="ARTÍCULOS"]:checked ~ .container-category [for="ARTÍCULOS"]{
+    background: #46a2fd;
+    color: #fff;
 }
