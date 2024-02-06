@@ -90,6 +90,7 @@
 [value="MANGAS"]:checked ~ .product-container .article:not([data-category~="MANGAS"]),
 [value="ACCESORIOS"]:checked ~ .product-container  .article:not([data-category~="ACCESORIOS"]),
 [value="DECORACIÓN"]:checked ~ .product-container  .article:not([data-category~="DECORACIÓN"]),
+[value="FIGURAS"]:checked ~ .product-container  .article:not([data-category~="FIGURAS"]),
 [value="ROPA"]:checked ~ .product-container  .article:not([data-category~="ROPA"]),
 [value="ARTÍCULOS"]:checked ~ .product-container  .article:not([data-category~="ARTÍCULOS"]){
     display: none;
@@ -99,8 +100,81 @@
 [value="MANGAS"]:checked ~ .container-category [for="MANGAS"],
 [value="ACCESORIOS"]:checked ~ .container-category [for="ACCESORIOS"],
 [value="DECORACIÓN"]:checked ~ .container-category [for="DECORACIÓN"],
+[value="FIGURAS"]:checked ~ .container-category [for="FIGURAS"],
 [value="ROPA"]:checked ~ .container-category [for="ROPA"],
 [value="ARTÍCULOS"]:checked ~ .container-category [for="ARTÍCULOS"]{
-    background: #46a2fd;
+    background: #fb1741;
     color: #fff;
+}
+
+/*Contenedor de categorias*/
+
+input[type="radio"]{
+    display: none;
+}
+
+.container-category{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px 0px 20px;
+}
+
+.container-category label{
+    padding: 6px 40px;
+    margin: 10px;
+    font-size: 20px;
+    background: #e2e2e2;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+.container-category label:hover{
+    opacity: 0.8;
+}
+
+/* Products - Content */
+.products-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.article {
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid red;
+    padding-top: 10px;
+}
+
+.article img {
+    border: 2px solid red;
+    height: 360px; 
+    max-width: 100%;  
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+    background: #fff;
+}
+
+.article-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 30px 30px;
+    background: #f1f1f1;
+}
+
+.article-content h4,
+.article-content p {
+    text-align: left;
+    margin: 0; 
 }
