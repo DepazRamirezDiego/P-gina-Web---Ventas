@@ -234,6 +234,14 @@ input[type="radio"]{
 }
 
 /*Productos mas vendidos*/
+.general-slide-container{
+    min-height: 100vh;/**/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+}
+
 .slide-container{
     max-width: 1120px;
     width: 100%;
@@ -242,11 +250,6 @@ input[type="radio"]{
 }
 
 .slide-content{
-    min-height: 100vh;/**/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #efefef;
     margin: 0 40px;
 }
 
