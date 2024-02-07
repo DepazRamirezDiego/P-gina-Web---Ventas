@@ -235,7 +235,7 @@ input[type="radio"]{
 
 /*Productos mas vendidos*/
 .general-slide-container{
-    min-height: 100vh;/**/
+    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,10 +251,14 @@ input[type="radio"]{
 
 .slide-content{
     margin: 0 40px;
+    overflow: hidden;
+    border-radius: 25px;
+    background-color: red;
+    
 }
 
 .card{
-    width: 320px;
+    width: 30px;
     border-radius: 25px;
     background-color: #fff;
 }
