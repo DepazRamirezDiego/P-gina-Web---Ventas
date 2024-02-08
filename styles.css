@@ -242,6 +242,13 @@ input[type="radio"]{
 .container-new-products{
     background: #e2e2e2;
 }
+/*
+.article-new-product{
+    min-height: 100%;
+    width: 100%;
+}*/
+
+
 
 /*Productos mas vendidos*/
 .bestsellers-products {
