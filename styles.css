@@ -468,6 +468,7 @@ input[type="radio"]{
 footer{
     width: 100%;
     margin: auto;
+    background-color: #222222
 }
 
 .important-content{
@@ -476,7 +477,7 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 30px 0px;
-    border: 2px solid red;
+    border-bottom: 3px solid #fb1741;
 }
 
 .logo h4{
@@ -487,6 +488,10 @@ footer{
 
 .logo{
     font-weight: bolder;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    width: 20vw;
 }
 
 .logo h4 b{
@@ -495,9 +500,75 @@ footer{
 }
 
 .footer-links{
-    width: 46vw;
+    width: 50vw;
     display: flex;
     justify-content: space-between;
-    border: 2px solid red;
+    margin: 0px 20px;
+}
+
+.footer-links h5{
+    font-size: 1.4rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.footer-links ul li{
+    margin-top: 4px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+}
+
+.footer-links ul li a{
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.footer-media{
+    width: 20vw;
     text-align: center;
+    margin: auto;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-media h1{
+    font-size: 1.4rem;
+    color: #fff;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 10px 5px 0px 5px;
+
+    background-color: #e0e0e09e;
+    border-radius: 50%;
+}
+
+.social-links a i {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.copyright{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 1.4rem;
+    padding: 20px 0px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.copyright b{
+    color: #fb1741;
 }
