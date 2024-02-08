@@ -233,6 +233,12 @@ input[type="radio"]{
     flex-direction: column;
 }
 
+/*Productos recientes*/
+.article-content h1{
+    font-size: 1.4rem;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 /*Productos mas vendidos*/
 .bestsellers-products {
     background-color: #efefef;
