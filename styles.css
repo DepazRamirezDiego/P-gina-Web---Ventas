@@ -239,6 +239,10 @@ input[type="radio"]{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+.container-new-products{
+    background: #e2e2e2;
+}
+
 /*Productos mas vendidos*/
 .bestsellers-products {
     background-color: #efefef;
