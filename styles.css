@@ -237,6 +237,17 @@ input[type="radio"]{
 .bestsellers-products {
     background-color: #efefef;
     height: 100%;
+    width: 100%;
+}
+
+.text-bestsellers-products{
+    width: 80%;
+    margin: auto;
+}
+
+.text-bestsellers-products h2{
+    font-size: 2rem;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .general-slide-container {
@@ -250,9 +261,8 @@ input[type="radio"]{
 }
 
 .slide-container {
-    max-width: 1120px;
-    width: 100%;
-    padding: 40px 0;
+    width: 90%;
+    padding: 20px 0 40px 0;
     height: 100%;
 }
 
@@ -385,3 +395,4 @@ input[type="radio"]{
     filter: hue-rotate(120deg);
     font-weight: bolder;
 }
+
