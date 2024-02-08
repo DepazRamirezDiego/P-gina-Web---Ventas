@@ -1,18 +1,16 @@
 var swiper = new Swiper(".slide-content", {
     slidesPerView: 3,
-    spaceBetween: 24,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
     loop: true,
-    centerSlide: 'true',
-    fade: 'true',
-    grabCursor: 'true',
+    grabCursor: true,
     loopFillGroupWithBlank: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        dynamicBullet: true,
     },
     navigation: {
-        nexEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
-})
+});
