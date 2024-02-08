@@ -474,11 +474,15 @@ footer{
     width: 90%;
     margin: auto;
     display: flex;
+    justify-content: space-between;
+    padding: 30px 0px;
+    border: 2px solid red;
 }
 
-.logo H4{
-    font-size: 1.6rem;
+.logo h4{
+    font-size: 2rem;
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bolder;
 }
 
 .logo{
@@ -486,10 +490,14 @@ footer{
 }
 
 .logo h4 b{
-    color: #46a2fd;
+    color: #fb1741;
     font-weight: bolder;
 }
 
 .footer-links{
+    width: 46vw;
     display: flex;
+    justify-content: space-between;
+    border: 2px solid red;
+    text-align: center;
 }
