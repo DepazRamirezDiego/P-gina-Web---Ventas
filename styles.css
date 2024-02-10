@@ -9,6 +9,217 @@
     list-style: none;
 }
 
+/*Header*/
+.header{
+    display: flex;
+    width: 100%;
+    border: 2px solid red;
+    background-color: #777777;
+}
+
+.header-container{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+/*Logo*/
+.logo{
+    border: 2px solid red;
+    margin: auto 0;
+    font-weight: bolder;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.logo h1{
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.logo h1 b{
+    color: #ff002f;
+    font-weight: bolder;
+}
+
+/*NavBar*/
+.navigation{
+    display: flex;
+    justify-content: center;
+    min-height: auto;
+    border: 2px solid black;
+    padding-top: 3%;
+    margin: auto;
+}
+
+.sub-container-navigation{
+    width: 700px;
+    height: 70px;
+    background: #fff;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.sub-container-navigation ul{
+    display: flex;
+    width: 100%;
+   justify-content: space-between;
+}
+
+.sub-container-navigation ul li{
+    position: relative;
+    list-style: none;
+    height: 70px;
+    width: 70px;
+    z-index: 1;
+    border: 2px solid red;
+}
+
+.sub-container-navigation ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+}
+.sub-container-navigation ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: .5s;
+    color: white;
+}
+
+.sub-container-navigation ul li.active a .icon{
+    transform: translateY(-32px);
+}
+
+.sub-container-navigation ul li a .text{
+    position: absolute;
+    color: white;
+    font-weight: 400;
+    font-size: .75em;
+    letter-spacing: .05em;
+    transition: .5s;
+    opacity: 0;
+    transform: translateY(20px);
+    color: #212020;
+}
+
+.sub-container-navigation ul li.active a .text{
+    opacity: 1;
+    transform: translateY(10px);
+}
+
+.indicator{
+    position: absolute;
+    top: -50%;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    background-color: #ff2f2f;
+    border: 6px solid white;
+    transition: .5s;
+}
+
+.indicator::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 0px -10px 0 0 white;
+    justify-content: space-between;
+}
+
+.indicator::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: 0px -10px 0 0 white;
+}
+
+.navigation ul li:nth-child(1).active ~ .indicator{
+    transform: translateX(calc(70px * 0));
+}
+
+.navigation ul li:nth-child(2).active ~ .indicator{
+    transform: translateX(calc(70px * 2.26));
+}
+
+.navigation ul li:nth-child(3).active ~ .indicator{
+    transform: translateX(calc(70px * 4.5));
+}
+
+.navigation ul li:nth-child(4).active ~ .indicator{
+    transform: translateX(calc(70px * 6.76));
+}
+
+.navigation ul li:nth-child(5).active ~ .indicator{
+    transform: translateX(calc(70px * 9));
+}
+
+
+/*Shopping-Cart*/
+.submenu{
+    position: relative;
+  }
+
+  .submenu #shopping-cart{
+    display: none;
+  }
+
+  .submenu:hover #shopping-cart{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #777797;
+    padding: 20px;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+  table{
+    width: 100%;
+  }
+
+  th, td{
+    color: #ffff;
+  }
+
+  .borrar{
+    background-color: #ff002f;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 800;
+  }
+
 /*Bar-Search (Buscador)*/
 #ctn-bars-search{
     position: fixed;
