@@ -7,6 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'Source Sans Pro', 'sans-serif';
 }
 
 /*Header*/
@@ -14,13 +15,17 @@
     display: flex;
     width: 100%;
     border: 2px solid red;
-    background-color: #777777;
+    background-color: #7b7b7b;
+    height: 15vh;
 }
 
 .header-container{
     display: flex;
-    width: 90%;
+    width: 1320px;
     margin: auto;
+    justify-content: space-between;
+    border: 2px solid purple;
+    height: 100%;
 }
 
 /*Logo*/
@@ -29,6 +34,7 @@
     margin: auto 0;
     font-weight: bolder;
     font-size: 1.1rem;
+    align-items: center;
     display: flex;
     justify-content: center;
 }
@@ -45,16 +51,17 @@
 
 /*NavBar*/
 .navigation{
+    border: 2px solid red;
     display: flex;
     justify-content: center;
     min-height: auto;
-    border: 2px solid black;
-    padding-top: 3%;
     margin: auto;
+    width: 700px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 
 .sub-container-navigation{
-    width: 700px;
     height: 70px;
     background: #fff;
     display: flex;
@@ -63,6 +70,7 @@
     align-items: center;
     border-radius: 10px;
     margin: auto;
+    width: 500px;
 }
 
 .sub-container-navigation ul{
@@ -77,7 +85,6 @@
     height: 70px;
     width: 70px;
     z-index: 1;
-    border: 2px solid red;
 }
 
 .sub-container-navigation ul li a{
@@ -99,7 +106,7 @@
     font-size: 1.5em;
     text-align: center;
     transition: .5s;
-    color: white;
+    color: black;
 }
 
 .sub-container-navigation ul li.active a .icon{
@@ -108,9 +115,10 @@
 
 .sub-container-navigation ul li a .text{
     position: absolute;
-    color: white;
-    font-weight: 400;
-    font-size: .75em;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', 'sans-serif';
     letter-spacing: .05em;
     transition: .5s;
     opacity: 0;
@@ -129,8 +137,8 @@
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    background-color: #ff2f2f;
-    border: 6px solid white;
+    background-color: white;
+    border: 6px solid #7b7b7b;
     transition: .5s;
 }
 
@@ -143,7 +151,7 @@
     height: 20px;
     background: transparent;
     border-top-right-radius: 20px;
-    box-shadow: 0px -10px 0 0 white;
+    box-shadow: 0px -10px 0 0 #7b7b7b;
     justify-content: space-between;
 }
 
@@ -156,7 +164,7 @@
     height: 20px;
     background: transparent;
     border-top-left-radius: 20px;
-    box-shadow: 0px -10px 0 0 white;
+    box-shadow: 0px -10px 0 0 #7b7b7b;
 }
 
 .navigation ul li:nth-child(1).active ~ .indicator{
@@ -177,6 +185,37 @@
 
 .navigation ul li:nth-child(5).active ~ .indicator{
     transform: translateX(calc(70px * 9));
+}
+
+/*Buttons - NavBar*/
+.buttons{
+    justify-content: space-between;
+    border: 2px solid purple;
+    color: #fff;
+    margin: auto 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.log-in, .cart, #icon-search{
+    color: #fff;
+    border: 2px solid black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 2.6rem;
+
+}
+
+
+/*Search-button*/
+#icon-search{
+    margin: 0px 10px;
+}
+
+#icon-search{
+    transform: rotateY(180deg);
 }
 
 
@@ -204,13 +243,25 @@
 
   table{
     width: 100%;
+    margin-bottom: 20px;
   }
 
   th, td{
     color: #ffff;
-  }
+    font-family: 'Source Sans Pro', 'sans-serif';
+    text-align: center;
+}
 
-  .borrar{
+.td-content{
+    padding: 10px;
+}
+
+.td-content-title{
+    padding: 8px;
+    text-align: left;
+}
+
+  .delete{
     background-color: #ff002f;
     cursor: pointer;
     border-radius: 50%;
@@ -218,7 +269,22 @@
     text-decoration: none;
     color: #ffff;
     font-weight: 800;
-  }
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.btn-empty-cart{
+    background-color: #fb1741;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: 'Source Sans Pro', 'sans-serif';
+    color: #fff;
+    font-weight: bolder;
+}
+
+/*NavToggle - Responsive*/
+.navToggle{
+    display: none;
+}
 
 /*Bar-Search (Buscador)*/
 #ctn-bars-search{
@@ -292,6 +358,7 @@
     margin: auto;
     background: #f8f8f8;
 }
+
 
 /*sistema de filtrado*/
 

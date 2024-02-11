@@ -46,17 +46,17 @@ function leerDatosElemento(elemento){
 function insertarCarrito(elemento){
     const row = document.createElement('tr');
     row.innerHTML = `
-        <td>
+        <td class="td-content">
             <img src="${elemento.imagen}" width=50/>
         </td>
-        <td>
+        <td class="td-content td-content-title">
             ${elemento.titulo}
         </td>
-        <td>
+        <td class="td-content">
             ${elemento.precio}
         </td>
-        <td>
-            <a href="#" class="borrar" data-id="${elemento.id}">X</a>
+        <td class="td-content">
+            <a href="#" class="delete" data-id="${elemento.id}">x</a>
         </td>
     `;
 
@@ -68,10 +68,10 @@ function eliminarElemento(e){
     let elemento,
         elementoId;
     
-    if(e.target.classList.contains('borrar')){
+    if(e.target.classList.contains('delete')){
         e.target.parentElement.parentElement.remove();
         elemento=e.target.parentElement.parentElement;
-        elementoId=elemento.querySelector('.borrar').getAttribute('data-id');
+        elementoId=elemento.querySelector('.delete').getAttribute('data-id');
     }
 }
 
@@ -82,7 +82,6 @@ function vaciarCarrito(){
 
     return false;
 }
-
 
 /*Script Slider Card*/
 var swiper = new Swiper(".slide-content", {
