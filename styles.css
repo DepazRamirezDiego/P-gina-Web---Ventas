@@ -79,8 +79,8 @@
 .sub-container-navigation ul li{
     position: relative;
     list-style: none;
-    height: 64px;
-    width: 64px;
+    height: 50px;
+    width: 50px;
     z-index: 1;
 }
 
@@ -99,7 +99,7 @@
 .sub-container-navigation ul li a .icon{
     position: relative;
     display: block;
-    line-height: 92px;
+    line-height: 70px;
     font-size: 1.4em;
     text-align: center;
     transition: .5s;
@@ -126,15 +126,15 @@
 
 .sub-container-navigation ul li.active a .text{
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(6px);
 }
 
 .indicator{
     position: absolute;
     top: -50%;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 54px;
+    height: 54px;
     background-color: white;
     border: 6px solid #7b7b7b;
     transition: .5s;
@@ -144,9 +144,9 @@
     content: '';
     position: absolute;
     top: 40%;
-    left: -20px;
-    width: 20px;
-    height: 20px;
+    left: -32px;
+    width: 30px;
+    height: 30px;
     background: transparent;
     border-top-right-radius: 20px;
     box-shadow: 0px -10px 0 0 #7b7b7b;
@@ -157,9 +157,9 @@
     content: '';
     position: absolute;
     top: 40%;
-    right: -20px;
-    width: 20px;
-    height: 20px;
+    right: -32px;
+    width: 30px;
+    height: 30px;
     background: transparent;
     border-top-left-radius: 20px;
     box-shadow: 0px -10px 0 0 #7b7b7b;
@@ -174,15 +174,15 @@
 }
 
 .navigation ul li:nth-child(3).active ~ .indicator{
-    transform: translateX(calc(70px * 3.1));
+    transform: translateX(calc(70px * 3.2));
 }
 
 .navigation ul li:nth-child(4).active ~ .indicator{
-    transform: translateX(calc(70px * 4.66));
+    transform: translateX(calc(70px * 4.8));
 }
 
 .navigation ul li:nth-child(5).active ~ .indicator{
-    transform: translateX(calc(70px * 6.2));
+    transform: translateX(calc(70px * 6.39));
 }
 
 /*Buttons - NavBar*/
@@ -209,19 +209,6 @@
 
 #icon-search{
     transform: rotateY(180deg);
-}
-
-.text-bestseller{
-    display: flex;
-    border: 2px solid red;
-    position: absolute;
-    text-align: center;
-}
-
-.text-bestseller .text{
-    position: absolute;
-    width: 100%;
-    border: 2px solid black;
 }
 
 /*Shopping-Cart*/
