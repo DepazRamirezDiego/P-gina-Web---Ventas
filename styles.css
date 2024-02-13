@@ -89,7 +89,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     font-size: 20px;
     text-align: center;
@@ -131,7 +131,7 @@
 
 .indicator{
     position: absolute;
-    top: -60%;
+    top: -50%;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -202,7 +202,6 @@
     cursor: pointer;
 }
 
-
 /*Search-button*/
 #icon-search{
     margin: 0px 20px;
@@ -212,6 +211,18 @@
     transform: rotateY(180deg);
 }
 
+.text-bestseller{
+    display: flex;
+    border: 2px solid red;
+    position: absolute;
+    text-align: center;
+}
+
+.text-bestseller .text{
+    position: absolute;
+    width: 100%;
+    border: 2px solid black;
+}
 
 /*Shopping-Cart*/
 .submenu{
