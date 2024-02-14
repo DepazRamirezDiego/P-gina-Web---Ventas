@@ -30,10 +30,11 @@
 .logo{
     margin: auto 0;
     font-weight: bolder;
-    font-size: .9rem;
+    font-size: 1rem;
     align-items: center;
     display: flex;
     justify-content: center;
+    width: 250px;
 }
 
 .logo h1{
@@ -192,20 +193,17 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    width: 250px;
 }
 
 .log-in, .cart, #icon-search{
     color: #fff;
-    display: flex;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     cursor: pointer;
+    margin: auto;
 }
 
 /*Search-button*/
-#icon-search{
-    margin: 0px 20px;
-}
-
 #icon-search{
     transform: rotateY(180deg);
 }
