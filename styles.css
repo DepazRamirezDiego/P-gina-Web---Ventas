@@ -206,6 +206,7 @@
 /*Search-button*/
 #icon-search{
     transform: rotateY(180deg);
+    color: red;
 }
 
 /*Shopping-Cart*/
