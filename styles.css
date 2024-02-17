@@ -350,6 +350,64 @@ input[type="radio"]{
     opacity: 0.8;
 }
 
+/*Cover - Efecto Parallax*/
+#parallax{
+    margin-top: 80px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#parallax img{
+    position: absolute;
+    bottom: 0px;
+}
+
+#logo{
+    position: absolute;
+    font-size: 5em;
+    margin-bottom: 60px;
+}
+
+#text{
+    position: absolute;
+    margin-top: 60px;
+    font-size: 3em;
+    font-weight: bolder;
+    color: #222222;
+}
+
+.parallax h2 b{
+    color: #fb1741;
+}
+
+#left-img-1, #left-img-2, #left-img-3{
+    width: 100px;
+    left: 20px;
+
+}
+
+#middle-img-1, #middle-img-2, #middle-img-3, #middle-img-4{
+    width: 280px;
+    height: 300px;
+}
+
+#middle-img-1{
+    width: 300px;
+    margin-right: 100px;
+}
+
+#middle-img-4{
+    width: 500px;
+}
+
+#right-img-1, #right-img-2, #right-img-3{
+    width: 200px;
+    right: 20px;
+}
+
 /* Products - Content */
 .products-content {
     width: 94%;
