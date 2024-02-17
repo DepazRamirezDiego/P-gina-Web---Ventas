@@ -34,16 +34,24 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: bolder;
+}
+
+.logo h1{
+    font-weight: bolder;
 }
 
 .logo h1 b{
-    color: #46a2fd;
+    color: #fb1741;
+    font-weight: bolder;
 }
 
 
 .menu {
     height: 80px;
-    margin-right: 60px;
+    position: relative;
+    margin-right: -280px;
+
 }
 
 .menu nav{
@@ -69,7 +77,7 @@ header{
     content: '';
     width: 100%;
     height: 4px;
-    background: #46a2fd;
+    background: #fb1741;
     position: absolute;
     top: 0;
     left: 0;
@@ -82,11 +90,11 @@ header{
 }
 
 .menu nav ul li a:hover{
-    color: #46a2fd;
+    color: #fb1741;
 }
 
 .menu .text-menu-selected{
-    color: #46a2fd;
+    color: #fb1741;
 }
 
 .menu nav ul li a .icon{
@@ -94,8 +102,41 @@ header{
 }
 
 .buttons{
-    border: 2px solid red;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
+
+#ctn-icon-search, .container-shopping-cart{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#ctn-icon-search{
+    padding-right: 10px;
+}
+
+.container-shopping-cart{
+    padding-left: 10px;
+}
+
+#icon-search, .cart{
+    font-size: 30px;
+    color: #777777;
+    cursor: pointer;
+    transition: all 300ms;
+
+}
+
+#icon-search:hover, .cart:hover{
+    color: #fb1741;
+}
+
 
 #icon-menu{
     width: 50px;
@@ -116,26 +157,6 @@ header{
 
 #icon-menu:hover{
     opacity: 0.8;
-}
-
-#ctn-icon-search, .cart{
-    position: absolute;
-    right: 20px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#ctn-icon-search i, .cart{
-    font-size: 18px;
-    color: #777777;
-    cursor: pointer;
-    transition: all 300ms;
-}
-
-#ctn-icon-search i:hover, .cart:hover{
-    color: #46a2fd;
 }
 
 
@@ -213,10 +234,11 @@ header{
     backdrop-filter: blur(10px);
     top: 100%;
     z-index: 1;
-    background-color: #777797;
+    background-color: #828282;
     padding: 20px;
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
   }
 
   table{
