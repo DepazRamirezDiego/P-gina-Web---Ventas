@@ -351,63 +351,101 @@ input[type="radio"]{
 }
 
 /*Cover - Efecto Parallax*/
+.parallax{
+    width: 100%;
+    background-color: #efefef;
+    background-image: url(https://media.istockphoto.com/id/1011498282/es/foto/anime-fondo-de-ilustraci%C3%B3n-3d-de-velocidad-c%C3%B3mic-fondo-radial.webp?b=1&s=170667a&w=0&k=20&c=-Ovw4o57m6EtnkbcIjzCnH3CogafDTHkJhEipe8pT9g=);
+    background-size: cover;
+}
+
+
 #parallax{
-    margin-top: 80px;
+    width: 94%;
+    margin: auto;
+    background: none;
     height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 #parallax img{
     position: absolute;
     bottom: 0px;
+    width: 430px;
+    filter: brightness(.5);
 }
 
 #logo{
     position: absolute;
     font-size: 5em;
     margin-bottom: 60px;
+    color: #000;
+    color: #dfdddd;
 }
 
+.parallax h2 b{
+    color: #ff002f;
+}
 #text{
     position: absolute;
     margin-top: 60px;
     font-size: 3em;
-    font-weight: bolder;
-    color: #222222;
+    font-weight: 700;
+    color: #dfdddd;
 }
 
-.parallax h2 b{
-    color: #fb1741;
+#left-img-1, #left-img-2{
+    left: 40px;
 }
 
-#left-img-1, #left-img-2, #left-img-3{
-    width: 100px;
-    left: 20px;
-
+#left-img-2{
+    left: 0px;
 }
 
-#middle-img-1, #middle-img-2, #middle-img-3, #middle-img-4{
-    width: 280px;
-    height: 300px;
+#left-img-1{
+    transform: rotate(2deg);
+    left: 200px;
 }
 
-#middle-img-1{
-    width: 300px;
-    margin-right: 100px;
+#left-img-2{
+    transform: rotate(-2deg);
+    top: 66px;
 }
 
-#middle-img-4{
-    width: 500px;
+#right-img-1, #right-img-2{
+    right: 40px;
 }
 
-#right-img-1, #right-img-2, #right-img-3{
-    width: 200px;
-    right: 20px;
+#right-img-2{
+    right: 0px;
 }
 
+#right-img-1{
+    transform: rotate(-2deg);
+    right: 200px;
+}
+
+#right-img-2{
+    transform: rotate(2deg);
+    top: 66px;
+}
+@keyframes loadAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(1%);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(.5%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+  }
 /* Products - Content */
 .products-content {
     width: 94%;

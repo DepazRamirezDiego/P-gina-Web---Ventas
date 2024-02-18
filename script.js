@@ -117,7 +117,6 @@ function ocultar_buscador(){
     cover_ctn_search.style.display = "none";
     inputSearch.value = "";
     box_search.style.display = "none";
-
 }
 
 
@@ -126,7 +125,6 @@ function ocultar_buscador(){
 document.getElementById("inputSearch").addEventListener("keyup", buscador_interno);
 
 function buscador_interno(){
-
 
     filter = inputSearch.value.toUpperCase();
     li = box_search.getElementsByTagName("li");
@@ -149,12 +147,19 @@ function buscador_interno(){
         }else{
             li[i].style.display = "none";
         }
-
     }
-
-
-
 }
+
+/*Parallax Effect*/
+window.addEventListener(("scroll"),()=>{
+    document.querySelector("#logo").style.marginTop = `${window.scrollY * 1.5}px`
+    document.querySelector("#text").style.marginTop = `${window.scrollY * 1.5 + 60}px`
+    document.querySelector("#middle-img").style.marginBottom = `-${window.scrollY * .3}px`
+    document.querySelector("#left-img-1").style.marginLeft = `-${window.scrollY * .1}px`
+    document.querySelector("#left-img-2").style.marginLeft = `-${window.scrollY  *.16}px`
+    document.querySelector("#right-img-1").style.marginRight = `-${window.scrollY * .1}px`
+    document.querySelector("#right-img-2").style.marginRight = `-${window.scrollY * .16}px`
+})
 
 
 /*Script Slider Card*/
