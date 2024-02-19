@@ -745,6 +745,88 @@ input[type="radio"]{
     font-weight: bolder;
 }
 
+/*Contact Us*/
+.contact-us{
+    width: 100%;
+    background-color: #ff496b;
+    padding-top: 80px;
+}
+
+.contact-us-container{
+    width: 90%;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.icon-content{
+    display: flex;
+}
+
+.icon-contact-us{
+    border: 2px solid purple;
+    height: 100%;
+    font-size: 20px;
+    position: relative;
+}
+
+.contact-us-text h4{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.contact-us-text p{
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.contact-us-content{
+    display: flex;
+}
+
+.contact-means, .contact-form{
+    width: 50vw;
+}
+
+.contact-means-section{
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80%;
+}
+
+.contact-means-section span{
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.contact-form{
+    border: 2px solid black;
+}
+
+.contact-form-content{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.form-content{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.form-content input{
+    margin-top: 20px;
+    padding: 10px 14px;
+    border-radius: 4px;
+    border: none;
+    max-width: 100%;
+    font-size: 1rem;
+}
+
+/*Me quedé acá*/
+
 /*Servicios*/
 .services-container{
     width: 100%;
