@@ -748,29 +748,110 @@ input[type="radio"]{
 /*Contact Us*/
 .contact-us{
     width: 100%;
+    height: 100%;
     background-color: #b5b5b5;
     padding-top: 80px;
 }
 
 .contact-us-container{
     width: 90%;
-    padding-top: 30px;
+    padding-top: 20px;
     margin: auto;
-}
-
-.icon-content{
-    display: flex;
-}
-
-.icon-contact-us{
-    border: 2px solid purple;
-    height: 100%;
-    font-size: 20px;
-    position: relative;
+    border: 2px solid magenta;
 }
 
 .contact-us-text h4{
     font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.contact-us-text p{
+    font-weight: 800;
+    font-size: 1.6rem;
+}
+
+.contact-us-content{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin-top: 6px;
+}
+
+.contact-means{
+    width: 50%;
+    border: 2px solid red;
+    margin: auto;
+    padding: 1% 4.6%;
+}
+
+.contact-means-text p{
+    font-size: 1.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+.contact-means a{
+    color: #000;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.contact-means-section{
+    border: 4px solid #fb1741;
+    border-radius: 4px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.phone-number{
+    margin-top: 20px;
+}
+
+.live-chat, .business-hours{
+    margin-top: 30px;
+}
+
+.icon-content{
+    align-items: center;
+    display: flex;
+}
+
+.contact-us-icon{
+    font-size: 2.4rem;
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #ff0f3b;
+}
+
+.icon-content span{
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-left: 20px;
+}
+
+.contact-us-paragraph p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 74px;
+}
+
+
+/*
+.icon-content{
+    display: flex;
+    align-items: center;
+    width: 98%;
+    border: 2px solid black;
+    margin: auto;
+}
+
+.contact-us-text h4{
+    font-size: 2.4rem;
     text-transform: uppercase;
     font-weight: 800;
 }
@@ -798,18 +879,39 @@ input[type="radio"]{
     border-radius: 6px;
 }
 
-.contact-means-section span{
+.contact-means-text{
+    width: 94%;
+    margin: auto;
+}
+
+.contact-means-text p{
+    font-size: 1.36rem;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.icon-content span{
     text-transform: uppercase;
     font-weight: 900;
+    font-size: 1.9rem;
+}
+
+.contact-us-paragraph{
+    margin: 14px auto auto auto;
+    width: 98%;
+    border: 2px solid black;
+}
+
+.contact-us-paragraph p{
     font-size: 1.4rem;
 }
 
 .contact-us-icon{
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
     color: #fb1741;
     margin-right: 20px;
-}
+}*/
 
 /**********************************/
 .contact-form{
