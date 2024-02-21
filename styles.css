@@ -755,7 +755,7 @@ input[type="radio"]{
 
 .contact-us-container{
     width: 90%;
-    padding-top: 20px;
+    padding-top: 30px;
     margin: auto;
     border: 2px solid magenta;
 }
@@ -790,7 +790,6 @@ input[type="radio"]{
     font-weight: 800;
     text-transform: uppercase;
 }
-
 
 .contact-means a{
     color: #000;
