@@ -791,6 +791,7 @@ input[type="radio"]{
     border-radius: 6px;
     display: flex;
     align-items: center;
+    background-color: #22222225;
 }
 
 .icon-content{
@@ -841,6 +842,11 @@ input[type="radio"]{
     margin-top: 20px;
 }
 
+form{
+    padding: 20px 10px;
+    border: 6px solid black;
+    border-radius: 6px;
+}
 
 
 
