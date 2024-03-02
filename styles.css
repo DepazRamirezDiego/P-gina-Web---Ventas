@@ -771,84 +771,53 @@ input[type="radio"]{
 
 .contact-us-content{
     display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 100%;
     margin-top: 20px;
-}
-
-.contact-means, .contact-form{
-    width: 50%;
-}
-
-.contact-means-text p{
-    font-size: 1.1rem;
-    font-weight: 700;
 }
 
 .contact-means-section{
-    border: 6px solid #ff002f;
-    margin-top: 20px;
-    width: 86%;
-    padding: 20px 10px;
+    width: 30%;
+    border: 6px solid #fb1741;
     border-radius: 6px;
-    display: flex;
-    align-items: center;
-    background-color: #22222225;
+    padding: 20px 20px 10px 20px;
 }
 
 .icon-content{
-    font-size: 3rem;
-    background-color: #ff002f;
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-}
-
-.contact-us-icon{
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin: 6px 0px 0px 6px;
+}
+
+.icon-content i{
+    font-size: 3rem;
+    color: #ff002f;
+    font-weight: 100;
+}
+
+.icon-content span{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-left: 6px;
 }
 
 .contact-us-text-content{
-    margin-left: 16px;
-}
-
-.contact-us-text-content span{
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    font-weight: 800;
+    text-align: center;
 }
 
 .contact-us-text-content p{
+    margin-top: 4px;
+    font-weight: 600;
     font-size: 1.2rem;
-    font-weight: 700;
 }
 
 .contact-us-text-content p a{
     color: #000;
+    font-weight: 800;
     text-decoration: underline;
 }
-
-/*-Sección Formulario-*/
-.contact-form-content{
-    width: 90%;
-}
-
-.contact-form-content h4{
-    font-size: 1.1rem;
-    font-weight: 700;
-}
-
-#contact-form{
-    margin-top: 20px;
-}
-
-form{
-    padding: 20px 10px;
-    border: 6px solid black;
-    border-radius: 6px;
-}
-
-
 
 /*
 .contact-us{
