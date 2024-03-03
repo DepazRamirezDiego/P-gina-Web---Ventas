@@ -748,80 +748,6 @@ input[type="radio"]{
 /*Contact Us*/
 .contact-us{
     width: 100%;
-    background-color: #bdbdbd;
-}
-
-.contact-us-container{
-    width: 90%;
-    margin: auto;
-    background: none;
-    padding: 80px 0px 40px 0px;
-}
-
-.contact-us-text h4{
-    font-weight: 800;
-    font-size: 2.4rem;
-    text-transform: uppercase;
-}
-
-.contact-us-text p{
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.contact-us-content{
-    display: flex;
-    margin: auto;
-    justify-content: space-around;
-    width: 100%;
-    margin-top: 20px;
-}
-
-.contact-means-section{
-    width: 30%;
-    border: 6px solid #fb1741;
-    border-radius: 6px;
-    padding: 20px 20px 10px 20px;
-}
-
-.icon-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.icon-content i{
-    font-size: 3rem;
-    color: #ff002f;
-    font-weight: 100;
-}
-
-.icon-content span{
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding-left: 6px;
-}
-
-.contact-us-text-content{
-    text-align: center;
-}
-
-.contact-us-text-content p{
-    margin-top: 4px;
-    font-weight: 600;
-    font-size: 1.2rem;
-}
-
-.contact-us-text-content p a{
-    color: #000;
-    font-weight: 800;
-    text-decoration: underline;
-}
-
-/*
-.contact-us{
-    width: 100%;
     height: 100%;
     background-color: #b5b5b5;
     padding-top: 80px;
@@ -829,9 +755,8 @@ input[type="radio"]{
 
 .contact-us-container{
     width: 90%;
-    padding-top: 30px;
+    padding-top: 20px;
     margin: auto;
-    border: 2px solid magenta;
 }
 
 .contact-us-text h4{
@@ -841,159 +766,66 @@ input[type="radio"]{
 }
 
 .contact-us-text p{
-    font-weight: 800;
-    font-size: 1.6rem;
-}
-
-.contact-us-content{
-    display: flex;
-    justify-content: center;
-    border: 2px solid black;
-    margin-top: 6px;
-}
-
-.contact-means{
-    width: 50%;
-    border: 2px solid red;
-    margin: auto;
-    padding: 1% 4.6%;
-}
-
-.contact-means-text p{
     font-size: 1.4rem;
-    font-weight: 800;
-    text-transform: uppercase;
-}
-
-.contact-means a{
-    color: #000;
-    font-weight: 800;
-    text-decoration: underline;
-}
-
-.contact-means-section{
-    border: 4px solid #fb1741;
-    border-radius: 4px;
-    width: 100%;
-    margin: auto;
-    padding: 20px 10px;
-}
-
-.phone-number{
-    margin-top: 20px;
-}
-
-.live-chat, .business-hours{
-    margin-top: 30px;
-}
-
-.icon-content{
-    align-items: center;
-    display: flex;
-}
-
-.contact-us-icon{
-    font-size: 2.4rem;
-    color: #fff;
-    padding: 8px;
-    border-radius: 50%;
-    background-color: #ff0f3b;
-}
-
-.icon-content span{
-    font-size: 1.8rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin-left: 20px;
-}
-
-.contact-us-paragraph p{
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-left: 74px;
-}*/
-
-
-/*
-.icon-content{
-    display: flex;
-    align-items: center;
-    width: 98%;
-    border: 2px solid black;
-    margin: auto;
-}
-
-.contact-us-text h4{
-    font-size: 2.4rem;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-.contact-us-text p{
-    font-size: 1.6rem;
     font-weight: 700;
 }
 
 .contact-us-content{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    border: 2px solid green;
+    height: 420px;
 }
 
 .contact-means, .contact-form{
-    width: 50vw;
+    width: 46%;
+    border: 2px solid black;
+    height: 100%;
+    justify-content: center;
+}
+
+.contact-means{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
 
 .contact-means-section{
-    border: 4px solid #ff002f;
-    margin-top: 20px;
-    padding: 10px;
-    width: 90%;
+    border: 6px solid #fb1741;
     border-radius: 6px;
-}
-
-.contact-means-text{
-    width: 94%;
-    margin: auto;
-}
-
-.contact-means-text p{
-    font-size: 1.36rem;
-    text-transform: uppercase;
-    font-weight: 800;
-}
-
-.icon-content span{
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 1.9rem;
-}
-
-.contact-us-paragraph{
-    margin: 14px auto auto auto;
-    width: 98%;
-    border: 2px solid black;
-}
-
-.contact-us-paragraph p{
-    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .contact-us-icon{
-    font-size: 3rem;
-    font-weight: 900;
-    color: #fb1741;
-    margin-right: 20px;
-}*/
-
-/**********************************/
-/*
-.contact-form{
-    margin: auto;
-    border: 2px solid purple;
-    padding: 1% 4.6%;
+    color: #ff002f;
+    font-size: 4rem;
 }
 
+.contact-us-paragraph{
+    padding-left: 10px;
+}
+
+.contact-us-paragraph span{
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.contact-us-paragraph p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.contact-us-paragraph p a{
+    color: #000;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+/*Contact us - Form*/
 .contact-form h4{
     font-size: 1.36rem;
     text-transform: uppercase;
@@ -1002,7 +834,7 @@ input[type="radio"]{
 
 #contact-form {
     background-color:rgba(81, 81, 81, 0.256);
-    padding: 10px 20px 30px 20px;
+    padding: 10px 20px;
     max-width:100%;
     border: 2px solid black;
     margin: auto;
@@ -1017,7 +849,6 @@ input[type="radio"]{
  #contact-form label { 
     font-size: 15px;  
     margin-bottom: 2px;
-    font-family: Arial, san-serif;
  } 
  #contact-form input,   
  #contact-form select,   
@@ -1038,7 +869,7 @@ input[type="radio"]{
  }  
  #contact-form textarea {
     width:100%;
-    height: 150px;
+    height: 100px;
  }
  #contact-form button[type="submit"] {
     cursor:pointer;
@@ -1071,7 +902,7 @@ input[type="radio"]{
  #contact-form .required {  
     font-weight:bold;  
     color: #000;      
- }*/
+ }
  
  /* Hide success/failure message
     (especially since the php is missing) */
@@ -1081,7 +912,6 @@ input[type="radio"]{
  }
  
  /* Make form look nice on smaller screens */
- /*
  @media only screen and (max-width: 580px) {
     #contact-form{
        left: 3%;
@@ -1091,7 +921,8 @@ input[type="radio"]{
        padding-left: 3%;
        padding-right: 3%;
     }
- }*/
+ }
+
 
 /*Servicios*/
 .services-container{
