@@ -745,18 +745,26 @@ input[type="radio"]{
     font-weight: bolder;
 }
 
-/*Contact Us*/
+/*Contact us*/
 .contact-us{
     width: 100%;
-    height: 100%;
-    background-color: #b5b5b5;
-    padding-top: 80px;
+    background-color: #ffffff;
+    padding: 80px 0px 40px 0px;
 }
 
 .contact-us-container{
     width: 90%;
-    padding-top: 20px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    align-items: center;
+    position: relative;
+}
+
+.contact-means-container, .contact-form{
+    width: 46%;
+    min-height: 100%;
 }
 
 .contact-us-text h4{
@@ -766,123 +774,117 @@ input[type="radio"]{
 }
 
 .contact-us-text p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
-.contact-us-content{
+.contact-means-content{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px solid green;
-    height: 420px;
-}
-
-.contact-means, .contact-form{
-    width: 46%;
-    border: 2px solid black;
-    height: 100%;
-    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 20px;
 }
 
 .contact-means{
     display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
-
-.contact-means-section{
-    border: 6px solid #fb1741;
-    border-radius: 6px;
-    display: flex;
     align-items: center;
-    padding: 10px 20px;
+    border: 4px solid #ff002f;
+    padding: 10px 4px;
+    border-radius: 6px;
 }
 
-.contact-us-icon{
-    color: #ff002f;
-    font-size: 4rem;
+.contact-means-icon i{
+    font-size: 3.4rem;
+    color: #fb1741;
 }
 
-.contact-us-paragraph{
-    padding-left: 10px;
+.contact-means-text{
+    margin-left: 20px;
 }
 
-.contact-us-paragraph span{
-    font-weight: 800;
-    text-transform: uppercase;
+.contact-means-text span{
     font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 800;
 }
 
-.contact-us-paragraph p{
-    font-size: 1.2rem;
+.contact-means-text p{
+    font-size: 1.1rem;
     font-weight: 600;
 }
 
-.contact-us-paragraph p a{
+.contact-means-text p a{
     color: #000;
     font-weight: 800;
     text-decoration: underline;
 }
 
-/*Contact us - Form*/
-.contact-form h4{
-    font-size: 1.36rem;
-    text-transform: uppercase;
-    font-weight: 800;
+/*Contact-middle*/
+.contact-middle{
+    width: 1px;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  left: 50%; /* Ajusta la posición horizontal de la línea */
 }
 
+/*Contact - Form*/
 #contact-form {
-    background-color:rgba(81, 81, 81, 0.256);
     padding: 10px 20px;
     max-width:100%;
-    border: 2px solid black;
-    margin: auto;
-    border-radius:6px;
-    -webkit-border-radius:6px;
-    -moz-border-radius: 6px;
-    margin-top: 10px;
- }
- #contact-form input,   
- #contact-form select,   
- #contact-form textarea,   
- #contact-form label { 
-    font-size: 15px;  
-    margin-bottom: 2px;
- } 
- #contact-form input,   
+    background-color: #d3d3d3a8;
+}
+
+#contact-form input,   
+#contact-form select,   
+#contact-form textarea,   
+#contact-form label { 
+   font-size: 15px;  
+   margin-bottom: 2px;
+   font-size: 1.06rem;
+} 
+
+.required{
+    font-size: 1.1rem;
+}
+
+#contact-form input,   
  #contact-form select,   
  #contact-form textarea { 
     width:100%;
-    background: #fff;
+    background: #f8f8f8;
     border: 0; 
     -moz-border-radius: 4px;  
     -webkit-border-radius: 4px;  
     border-radius: 4px;
     margin-bottom: 25px;  
-    padding: 5px;  
+    padding: 8px 10px; 
+    height: 30px; 
  }  
+
  #contact-form input:focus,   
  #contact-form select:focus,   
  #contact-form textarea:focus {  
-    background-color: #E5E6E7; 
+    background-color: #f5f5f5; 
  }  
  #contact-form textarea {
     width:100%;
+    resize: none; 
     height: 100px;
  }
+
  #contact-form button[type="submit"] {
     cursor:pointer;
     width:100%;
     border:none;
     background:#fb1741;
     color:#FFF;
-    margin:0 0 5px;
-    padding:16px 0px;
+    padding:10px 0px;
     border-radius: 8px;
     font-size: 1.1rem;
-    font-weight: 800;
+    font-weight: 700;
  }
+
  #contact-form button[type="submit"]:hover {
     background: #ff002f;
     transition: all .3s ease;
@@ -903,16 +905,9 @@ input[type="radio"]{
     font-weight:bold;  
     color: #000;      
  }
- 
- /* Hide success/failure message
-    (especially since the php is missing) */
- #failure, #success {
-    color: #6EA070; 
-    display:none;  
- }
- 
- /* Make form look nice on smaller screens */
- @media only screen and (max-width: 580px) {
+
+  /* Make form look nice on smaller screens */
+  @media only screen and (max-width: 580px) {
     #contact-form{
        left: 3%;
        margin-right: 3%;
@@ -922,8 +917,7 @@ input[type="radio"]{
        padding-right: 3%;
     }
  }
-
-
+ 
 /*Servicios*/
 .services-container{
     width: 100%;
