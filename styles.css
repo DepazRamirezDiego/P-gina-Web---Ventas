@@ -789,13 +789,21 @@ input[type="radio"]{
     display: flex;
     align-items: center;
     border: 4px solid #ff002f;
-    padding: 10px 4px;
+    padding: 10px;
     border-radius: 6px;
 }
 
 .contact-means-icon i{
-    font-size: 3.4rem;
+    font-size: 4rem;
     color: #fb1741;
+}
+
+.contact-means-icon i{
+    transition: transform 0.3s ease;
+}
+
+.contact-means-icon i:hover {
+    transform: rotate(10deg);
 }
 
 .contact-means-text{
@@ -811,6 +819,7 @@ input[type="radio"]{
 .contact-means-text p{
     font-size: 1.1rem;
     font-weight: 600;
+    margin-top: 6px;
 }
 
 .contact-means-text p a{
