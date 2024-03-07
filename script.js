@@ -33,6 +33,25 @@ function mostrar_buscador(){
 
 }
 
+/*Script - Load more*/
+let loadMoreBtn = document.querySelector('#load-more');
+let currentItem = 4;
+
+loadMoreBtn.onclick = () =>{
+
+    let boxes = [...document.querySelectorAll('.products-content .article-all-products')];
+    //CARGAR PRODUCTOS DE 4 EN 4, SI SE SELECCIONO MENOS, SE MOSTRARA LOS SELECCIONADOS
+    for(var i = currentItem; i< currentItem + 4; i++){
+        boxes[i].style.display = 'inline-block';
+    }
+
+    currentItem +=4;
+    if(currentItem >=boxes.length){
+        loadMoreBtn.style.display = 'none'
+    }
+}
+
+
 /*Script - Shopping-Cart*/
 const carrito = document.getElementById('shopping-cart');
 const elementos = document.querySelectorAll('.add-cart');

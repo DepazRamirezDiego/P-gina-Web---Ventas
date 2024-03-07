@@ -548,6 +548,17 @@ input[type="radio"]{
     flex-direction: column;
 }
 
+.article-all-products{
+    display: none;
+}
+
+.article-all-products:nth-child(1),
+.article-all-products:nth-child(2),
+.article-all-products:nth-child(3),
+.article-all-products:nth-child(4){
+    display: inline-block;
+}
+
 /*Productos recientes*/
 .container-new-products{
     width: 100%;
